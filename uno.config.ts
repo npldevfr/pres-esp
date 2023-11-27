@@ -1,4 +1,4 @@
-import { defineConfig, presetIcons, presetUno, presetWind } from 'unocss'
+import { defineConfig, presetIcons, presetUno, presetWebFonts, presetWind } from 'unocss'
 import { presetHeroPatterns } from '@julr/unocss-preset-heropatterns'
 
 export default defineConfig({
@@ -6,7 +6,12 @@ export default defineConfig({
     presetUno(),
     presetWind(),
     presetIcons(),
-    presetIcons(),
+    presetWebFonts({
+      provider: 'google',
+      fonts: {
+        inter: 'Inter:300,400,500,600,700',
+      },
+    }),
     presetHeroPatterns(),
   ],
   theme: {
