@@ -3,20 +3,15 @@
 </script>
 
 <template>
-  <div class="fixed inset-x-0 top-0 z-50 flex h-14 items-center justify-center gap-12 px-4 transition sm:px-6 backdrop-blur-sm bg-white/20">
-    <div class="w-[1000px] flex gap-10 flex items-center">
-      <Logo class="w-30" />
-      <Navigation>
-        <NavigationItem to="/">
-          Introduction
-        </NavigationItem>
-        <NavigationItem to="#who">
-          Pour qui ?
-        </NavigationItem>
-        <NavigationItem to="#features">
-          Fonctionnalités
-        </NavigationItem>
-      </Navigation>
+  <div class="fixed inset-x-0 top-0 z-50 flex h-14 items-center justify-center gap-12 px-4 transition sm:px-6 backdrop-blur-sm bg-white/50">
+    <div class="w-[1000px] flex justify-between gap-10 flex items-center">
+      <div class="flex flex-row gap-10">
+        <Logo class="w-30" />
+        <Navigation>
+          <slot />
+        </Navigation>
+      </div>
+      <NuxtLink target="_blank" to="https://github.com/npldevfr/pres-esp" class="text-2xl cursor-pointer i-mdi-github" />
     </div>
   </div>
   <div class="absolute left-1/2 top-0 ml-[-38rem] h-[25rem] w-[81.25rem]">

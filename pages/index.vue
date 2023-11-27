@@ -3,7 +3,17 @@ import Card from '~/components/Cards/Card.vue'
 </script>
 
 <template>
-  <Header />
+  <Header>
+    <NavigationItem to="/">
+      Introduction
+    </NavigationItem>
+    <NavigationItem to="#for-whom">
+      Pour qui ?
+    </NavigationItem>
+    <NavigationItem to="#features">
+      Fonctionnalités
+    </NavigationItem>
+  </Header>
   <Container>
     <div class="w-full flex items-center flex-col gap-2 text-center py-20">
       <h1 v-motion-fade-visible-once class="flex justify-center text-4xl font-bold text-center">
@@ -60,6 +70,24 @@ import Card from '~/components/Cards/Card.vue'
         icon="i-mdi-server"
       />
     </Cards>
+
+    <Category
+      id="introduction"
+      align="left"
+      icon="i-mdi-information"
+      title="Introduction"
+    >
+      &mdash; Nous sommes une plateforme cross-plateform facilitant l'accès aux outils éducatifs. Simplifiant la collaboration et les cours en ligne pour écoles et instituts, notre solution promeut l'éducation inclusive, offrant ressources variées et visio-conférences fluides pour un enseignement de qualité.
+    </Category>
+
+    <Category
+      id="for-whom"
+      title="Pour qui ?"
+      icon="i-mdi-account-group"
+      align="right"
+    >
+      &mdash; Notre plateforme est destinée aux écoles, universités, instituts, et autres établissements d'enseignement. Nous offrons une solution complète pour la gestion de votre établissement, incluant la gestion des étudiants, des professeurs, des cours, des devoirs, des examens, et plus.
+    </Category>
   </Container>
 </template>
 
