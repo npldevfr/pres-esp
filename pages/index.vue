@@ -28,7 +28,7 @@
             </span>
           </span>
         </span>
-        &nbsp;d'enseignement
+        d'enseignement
       </h1>
       <p v-motion-fade-visible-once class="w-full text-stone-700 max-w-160">
         Gérez un campus, école, université, ou autre établissement d'enseignement avec une seule application.
@@ -71,14 +71,14 @@
     </Cards>
   </Container>
 
-  <Container class="bg-stone-50/90 ">
+  <Container class="bg-stone-50/90 pb-20">
     <Category
       id="presentation"
       align="left"
       icon="i-mdi-information"
       title="Introduction"
     >
-      &mdash; Nous sommes une plateforme cross-plateform facilitant l'accès aux outils éducatifs. Simplifiant la collaboration et les cours en ligne pour écoles et instituts, notre solution promeut l'éducation inclusive, offrant ressources variées et visio-conférences fluides pour un enseignement de qualité.
+      Nous sommes une plateforme cross-plateform facilitant l'accès aux outils éducatifs. Simplifiant la collaboration et les cours en ligne pour écoles et instituts, notre solution promeut l'éducation inclusive, offrant ressources variées et visio-conférences fluides pour un enseignement de qualité.
     </Category>
 
     <Category
@@ -87,11 +87,10 @@
       icon="i-mdi-account-group"
       align="right"
     >
-      &mdash; Notre plateforme est destinée aux écoles, universités, instituts, et autres établissements d'enseignement. Nous offrons une solution complète pour la gestion de votre établissement, incluant la gestion des étudiants, des professeurs, des cours, des devoirs, des examens, et plus.
+      Notre plateforme est destinée aux écoles, universités, instituts, et autres établissements d'enseignement. Nous offrons une solution complète pour la gestion de votre établissement, incluant la gestion des étudiants, des professeurs, des cours, des devoirs, des examens, et plus.
     </Category>
-
-    <Category />
   </Container>
+  <Container class="pb-100" />
 </template>
 
 <style>
