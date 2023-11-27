@@ -1,14 +1,13 @@
-<script setup lang="ts">
-import Card from '~/components/Cards/Card.vue'
-</script>
-
 <template>
+  <Head>
+    <Title> LearnForge &mdash; Une plateforme d'enseignement </Title>
+  </Head>
   <Header>
     <NavigationItem to="/">
-      Introduction
+      Accueil
     </NavigationItem>
-    <NavigationItem to="#for-whom">
-      Pour qui ?
+    <NavigationItem to="#presentation">
+      Présentation
     </NavigationItem>
     <NavigationItem to="#features">
       Fonctionnalités
@@ -16,19 +15,19 @@ import Card from '~/components/Cards/Card.vue'
   </Header>
   <Container>
     <div class="w-full flex items-center flex-col gap-2 text-center py-20">
-      <h1 v-motion-fade-visible-once class="flex justify-center text-4xl font-bold text-center">
-        Une&nbsp;<div
+      <h1 v-motion-fade-visible-once class="w-full justify-center text-4xl font-bold text-center">
+        Une&nbsp;<span
           class="inline-flex h-10 overflow-hidden"
         >
-          <div class="animate-swap [--bg-size:400%]">
-            <div class="bg-gradient-to-r from-green-500 to-green-500 flex text-transparent bg-clip-text">
+          <span class="animate-swap [--bg-size:400%]">
+            <span class="bg-gradient-to-r from-primary to-primary flex text-transparent bg-clip-text">
               application
-            </div>
-            <div class="bg-gradient-to-r from-green-500 to-green-500 flex text-transparent bg-clip-text">
+            </span>
+            <span class="bg-gradient-to-r from-primary to-primary flex text-transparent bg-clip-text">
               plateforme
-            </div>
-          </div>
-        </div>
+            </span>
+          </span>
+        </span>
         &nbsp;d'enseignement
       </h1>
       <p v-motion-fade-visible-once class="w-full text-stone-700 max-w-160">
@@ -39,40 +38,42 @@ import Card from '~/components/Cards/Card.vue'
     <br class="my-20">
 
     <Cards>
-      <Card
-        title="Safety First"
+      <CardsCard
+        title="Safety first"
         description="Sécurisez votre application avec des rôles, des permissions, et plus."
-        icon="i-mdi-shield-check"
+        icon="i-mdi-lock"
       />
-      <Card
+      <CardsCard
         title="Plugins"
         description="Intégrez des plugins du marketplace pour inclure visioconférence, édition de documents en temps réel et autres dans votre application."
         icon="i-mdi-puzzle"
       />
-      <Card
+      <CardsCard
         title="Personnalisable"
         description="Personnalisez votre application avec des thèmes, des couleurs, et plus."
         icon="i-mdi-palette"
       />
-      <Card
+      <CardsCard
         title="Multi-langues"
         description="Traduisez votre application dans plusieurs langues."
         icon="i-mdi-translate"
       />
-      <Card
+      <CardsCard
         title="Accessibilité et Inclusivité"
         description="Rendez votre application accessible et inclusive pour tout le monde."
         icon="i-mdi-access-point"
       />
-      <Card
+      <CardsCard
         title="Auto-hébergement"
         description="Hébergez votre application sur votre propre serveur."
         icon="i-mdi-server"
       />
     </Cards>
+  </Container>
 
+  <Container class="bg-stone-50/90 ">
     <Category
-      id="introduction"
+      id="presentation"
       align="left"
       icon="i-mdi-information"
       title="Introduction"
@@ -88,6 +89,8 @@ import Card from '~/components/Cards/Card.vue'
     >
       &mdash; Notre plateforme est destinée aux écoles, universités, instituts, et autres établissements d'enseignement. Nous offrons une solution complète pour la gestion de votre établissement, incluant la gestion des étudiants, des professeurs, des cours, des devoirs, des examens, et plus.
     </Category>
+
+    <Category />
   </Container>
 </template>
 

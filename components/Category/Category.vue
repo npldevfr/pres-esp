@@ -9,16 +9,18 @@ const { title, id, align, icon } = defineProps<{
 
 <template>
   <div :id="id" class="w-full grid grid-cols-3 pt-20 gap-4">
-    <div v-if="align === 'left'" class="col-span-1 flex items-center justify-center text-5xl text-stone-900/10">
+    <div v-if="align === 'left'" class="col-span-1 flex items-center justify-center text-5xl text-stone-300">
       <div :class="icon" />
     </div>
     <div class="flex flex-col col-span-2">
-      <h2 class="text-3xl  font-bold">
+      <h2 class="text-3xl drop-shadow-xl font-bold">
         {{ title }}
       </h2>
-      <slot />
+      <span class="text-justify">
+        <slot />
+      </span>
     </div>
-    <div v-if="align === 'right'" class="col-span-1 flex items-center justify-center text-5xl text-stone-900/10">
+    <div v-if="align === 'right'" class="col-span-1 flex items-center justify-center text-5xl text-stone-300">
       <div :class="icon" />
     </div>
   </div>

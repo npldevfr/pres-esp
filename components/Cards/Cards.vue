@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="w-full gap-4 grid grid-cols-3">
+  <div class="w-full gap-4 grid md:grid-cols-3 grid-cols-1">
     <slot />
   </div>
 </template>
