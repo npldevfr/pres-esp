@@ -74,6 +74,7 @@
   <Container class="bg-stone-50/60 pb-20 border-b border-t">
     <Category
       id="presentation"
+      v-motion-slide-visible-left
       align="right"
       icon="i-mdi-information"
       title="Introduction"
@@ -83,6 +84,7 @@
 
     <Category
       id="for-whom"
+      v-motion-slide-visible-right
       title="Pour qui ?"
       icon="i-mdi-account-group"
       align="left"

@@ -6,7 +6,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="col-span-1 rounded-[10px] p-[20px] border">
+  <div v-motion-slide-visible-once-top class="col-span-1 rounded-[10px] p-[20px] border">
     <h2 class="text-xl pb-3 font-bold text-stone-700">
       {{ props.name }}
     </h2>
