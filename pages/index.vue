@@ -115,7 +115,7 @@
     </h2>
     <Table :headers="['LearnForge', 'Moodle']">
       <template #header-learnforge>
-        <Logo class="w-25" />
+        <Logo class="w-20" />
       </template>
       <template #header-moodle>
         <div class="i-devicon-moodle text-xl" />

@@ -6,7 +6,7 @@
   <div class="fixed z-8000 inset-x-0 w-full top-0 flex md:h-14 items-center justify-center gap-12 px-4 transition sm:px-6 backdrop-blur-sm bg-white/50">
     <div class="md:w-[1000px] w-full flex md:px-0 md:py-0 py-4 px-4 gap-10 md:justify-between md:flex md:items-center">
       <NuxtLink to="/">
-        <Logo class="w-30" />
+        <Logo class="w-25" />
       </NuxtLink>
       <Navigation class="md:!flex !hidden">
         <slot />
