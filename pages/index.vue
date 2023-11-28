@@ -68,12 +68,12 @@
       />
       <CardsCard
         title="Multi-langues"
-        description="Traduisez votre application dans plusieurs langues."
+        description="Traduction des exercices et examens dans plusieurs langues."
         icon="i-mdi-translate"
       />
       <CardsCard
         title="Accessibilité et Inclusivité"
-        description="Rendez votre application accessible et inclusive pour tout le monde."
+        description="Disponible pour tout le monde, partout."
         icon="i-mdi-access-point"
       />
       <CardsCard
@@ -123,10 +123,10 @@
       </template>
 
       <TableItem name="Sécurité" :rows="['yes', 'yes']" description="Sécurité des examens et cours." />
-      <TableItem name="Multi-langues" :rows="['yes', 'yes']" description="Traduisez votre application dans plusieurs langues." />
+      <TableItem name="Multi-langues" :rows="['yes', 'yes']" description="Traduction des cours et examens dans plusieurs langues." />
       <TableItem name="Plugins" :rows="['yes', 'yes']" description="Intégration de plugins communautaires pour créer de nouvelles façons d'apprendre." />
-      <TableItem name="Accessibilité et Inclusivité" :rows="['yes', 'yes']" description="Rendez votre application accessible et inclusive pour tout le monde." />
-      <TableItem name="Anti-triche" :rows="['yes', 'Seulement en plugin']" description="Sécurisez vos examens avec des outils anti-triche." />
+      <TableItem name="Accessibilité et Inclusivité" :rows="['yes', 'yes']" description="Accessible via un navigateur web et une application mobile." />
+      <TableItem name="Intégrité" :rows="['yes', 'Seulement en plugin']" description="Intégrité des examens et cours avec des outils anti-triche." />
       <TableItem name="Cours par défaut" :rows="['yes', 'no']" description="Profitez de cours par défaut pour commencer à utiliser l'application sans avoir à créer de cours." />
       <TableItem name="UI Friendly" :rows="['yes', 'no']" description="Interface utilisateur simple et intuitive." />
       <TableItem name="Marketplace de cours & contenu" :rows="['yes', 'no']" description="Accédez à un marketplace de cours et de contenu pour enrichir votre application." />
