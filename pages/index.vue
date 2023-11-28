@@ -92,7 +92,7 @@ import Plugin from '~/components/Plugin/Plugin.vue'
       icon="i-mdi-information"
       title="Introduction"
     >
-      Nous sommes une application cross-plateform facilitant l'accès aux outils éducatifs. Simplifiant la collaboration et les cours en ligne pour écoles et instituts, notre solution promeut l'éducation inclusive, offrant ressources variées et visio-conférences fluides pour un enseignement de qualité.
+      Nous sommes une application cross-plateforme facilitant l'accès aux outils éducatifs, simplifiant la collaboration pour les cours en ligne et en présentiel dans les écoles et les instituts. Notre solution promeut l'éducation inclusive en offrant des ressources variées pour un enseignement de qualité.
     </Category>
 
     <Category
@@ -107,7 +107,7 @@ import Plugin from '~/components/Plugin/Plugin.vue'
       icon="i-mdi-rocket"
       align="right"
     >
-      En vous engageant dans notre projet, vous bénéficierez de l'opportunité d'enrichir le contenu, de soumettre des idées, de modifier des concepts, ou simplement de développer à votre rythme. Notre initiative est ouverte à tous, qu'il s'agisse d'intelligence artificielle, de développement opérationnel, et bien plus encore. L'avantage de notre projet réside dans son potentiel infini, sans aucune limite à la créativité. Grâce à notre système de plugins, vous pourrez continuellement intégrer du nouveau contenu.
+      En vous engageant dans notre projet, vous bénéficierez de l'opportunité d'enrichir le contenu, de soumettre des idées, de modifier des concepts, ou simplement de développer à votre rythme. Notre initiative est ouverte à tous, qu'il s'agisse d'<b>intelligence artificielle</b>, <b>devops</b>, de <b>développement opérationnel</b>, et bien plus encore. L'avantage de notre projet réside dans son potentiel infini, sans aucune limite à la créativité. Grâce à notre système de plugins, vous pourrez continuellement intégrer du nouveau contenu.
     </Category>
   </Container>
   <Container id="vs-moodle" class="py-20">
