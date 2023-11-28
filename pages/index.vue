@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <Head>
     <Title> LearnForge &mdash; Une plateforme d'enseignement </Title>
@@ -9,12 +12,19 @@
     <NavigationItem to="#presentation">
       Présentation
     </NavigationItem>
+    <NavigationItem to="#vs-moodle">
+      VS Moodle
+    </NavigationItem>
     <NavigationItem to="#pbs">
-      Fonctionnalités
+      PBS
     </NavigationItem>
   </Header>
   <Container>
     <div class="w-full flex items-center flex-col gap-2 text-center py-20">
+      <CTA>
+        <div class="i-material-symbols-how-to-vote" />
+        Votez pour nous et rejoignez notre équipe !
+      </CTA>
       <h1 v-motion-fade-visible-once class="w-full justify-center text-4xl font-bold text-center">
         Une&nbsp;<span
           class="inline-flex h-10 overflow-hidden"
@@ -82,13 +92,35 @@
     </Category>
 
     <Category
-      id="for-whom"
       title="Pour qui ?"
       icon="i-mdi-account-group"
       align="left"
     >
       Notre plateforme est destinée aux écoles, universités, instituts, et autres établissements d'enseignement. Nous offrons une solution complète pour la gestion de votre établissement, incluant la gestion des étudiants, des professeurs, des cours, des devoirs, des examens, et plus.
     </Category>
+  </Container>
+  <Container id="vs-moodle" class="py-20">
+    <h2 class="text-4xl font-bold text-center mb-20">
+      VS Moodle
+    </h2>
+    <Table :headers="['LearnForge', 'Moodle']">
+      <template #header-learnforge>
+        <Logo class="w-25" />
+      </template>
+      <template #header-moodle>
+        <div class="i-devicon-moodle text-xl" />
+        <small>(Moodle)</small>
+      </template>
+      <TableItem name="Sécurité" :rows="['yes', 'yes']" description="Gestion des rôles, permissions, et plus." />
+      <TableItem name="Plugins" :rows="['yes', 'yes']" description="Intégration de plugins communautaires." />
+      <TableItem name="Auto-hébergement" :rows="['yes', 'yes']" description="Hébergez votre application sur votre propre serveur." />
+      <TableItem name="Personnalisable" :rows="['yes', 'partial']" description="Personnalisez votre application avec des thèmes, des couleurs, et plus." />
+      <TableItem name="Multi-langues" :rows="['yes', 'partial']" description="Traduisez votre application dans plusieurs langues." />
+      <TableItem name="Accessibilité et Inclusivité" :rows="['yes', 'no']" description="Normes ARIA, A11Y." />
+      <TableItem name="SDK & Librairie UI intégrés" :rows="['yes', 'no']" description="Bibliothèque UI et SDK pour développer des plugins facilement." />
+      <TableItem name="Performances" :rows="['yes', 'no']" description="Application rapide et performante même avec des plugins." />
+      <TableItem name="Creation de plugins simplifiée" :rows="['yes', 'no']" description="Créez des plugins facilement avec notre SDK." />
+    </Table>
   </Container>
   <Container id="pbs" class="pb-100">
     <h2 class="text-4xl font-bold text-center mb-20">
