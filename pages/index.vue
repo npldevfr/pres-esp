@@ -21,10 +21,10 @@
   </Header>
   <Container>
     <div class="w-full flex items-center flex-col gap-2 text-center py-20">
-      <CTA>
+      <Cta v-motion-fade-visible-once>
         <div class="i-material-symbols-how-to-vote" />
         Votez pour nous et rejoignez notre équipe !
-      </CTA>
+      </Cta>
       <h1 v-motion-fade-visible-once class="w-full justify-center text-4xl font-bold text-center">
         Une&nbsp;<span
           class="inline-flex h-10 overflow-hidden"
@@ -97,6 +97,13 @@
       align="left"
     >
       Notre plateforme est destinée aux écoles, universités, instituts, et autres établissements d'enseignement. Nous offrons une solution complète pour la gestion de votre établissement, incluant la gestion des étudiants, des professeurs, des cours, des devoirs, des examens, et plus.
+    </Category>
+    <Category
+      title="Pourquoi nous ?"
+      icon="i-mdi-rocket"
+      align="right"
+    >
+      En vous engageant dans notre projet, vous bénéficierez de l'opportunité d'enrichir le contenu, de soumettre des idées, de modifier des concepts, ou simplement de développer à votre rythme. Notre initiative est ouverte à tous, qu'il s'agisse d'intelligence artificielle, de développement opérationnel, et bien plus encore. L'avantage de notre projet réside dans son potentiel infini, sans aucune limite à la créativité. Grâce à notre système de plugins, vous pourrez continuellement intégrer du nouveau contenu.
     </Category>
   </Container>
   <Container id="vs-moodle" class="py-20">
