@@ -91,7 +91,7 @@
       icon="i-mdi-information"
       title="Introduction"
     >
-      Nous sommes une application cross-plateforme facilitant l'accès aux outils éducatifs, simplifiant la collaboration pour les cours en ligne et en présentiel dans les écoles et les instituts. Notre solution promeut l'éducation inclusive en offrant des ressources variées pour un enseignement de qualité.
+      Nous sommes une application cross-plateforme innovante qui facilite l'accès aux outils éducatifs. Nous simplifions l'apprentissage et la collaboration, rendons les examens en ligne possibles et promouvons l'éducation inclusive partout.
     </Category>
 
     <Category
@@ -99,7 +99,7 @@
       icon="i-mdi-account-group"
       align="left"
     >
-      Notre plateforme est destinée aux écoles, universités, instituts, et autres établissements d'enseignement. Nous offrons une solution complète pour la gestion de votre établissement, incluant la gestion des étudiants, des professeurs, des cours, des devoirs, des examens, et plus.
+      L'application vise principalement les universités et les écoles, mais elle est ouverte à toute personne souhaitant l'utiliser pour divers usages. Grâce à son marketplace, elle offre la possibilité de trouver des ressources dans de nombreux domaines, qu'ils soient spécifiques ou généraux.
     </Category>
     <Category
       title="Pourquoi nous ?"
@@ -164,76 +164,7 @@
     <h2 class="text-4xl font-bold text-center mb-20">
       PBS (Product Breakdown Structure)
     </h2>
-    <PbsZone>
-      <PbsItem
-        name="Outils de Collaboration"
-        :children="[
-          {
-            name: 'Espaces de Travail Collaboratifs',
-          },
-          {
-            name: 'Partage de Contenu Simplifié',
-          },
-          {
-            name: 'Intégration de Plugins Communautaires',
-          },
-        ]"
-      />
-      <PbsItem
-        name="Cours en Ligne et Formation"
-        :children="[
-          {
-            name: 'Cours Interactifs',
-          },
-          {
-            name: 'Formation pour les Enseignants',
-          },
-          {
-            name: 'Accès à des Outils Pédagogiques Externes',
-          },
-        ]"
-      />
-      <PbsItem
-        name="Visioconférences Éducatives"
-        :children="[
-          {
-            name: 'Salles de Classe Virtuelles',
-          },
-          {
-            name: 'Conférences Invités et Experts',
-          },
-          {
-            name: 'Extensions pour des Fonctionnalités Personnalisées',
-          },
-        ]
-        "
-      />
-      <PbsItem
-        name="Accessibilité et Inclusivité"
-        :children="[
-          {
-            name: 'Ressources Diversifiées',
-          },
-          {
-            name: 'Adaptabilité aux Besoins Spécifiques',
-          },
-          {
-            name: 'Contributions de la Communauté pour la Diversité des Ressources',
-          },
-        ]"
-      />
-      <PbsItem
-        name="Support Technique et Formation Continue"
-        :children="[
-          {
-            name: 'Assistance Technique ',
-          },
-          {
-            name: 'Ressources de Formation Continue',
-          },
-        ]"
-      />
-    </PbsZone>
+    <img src="../public/pbs.png" alt="Product Breakdown Structure" class="w-full">
   </Container>
 </template>
 
