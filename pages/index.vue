@@ -153,7 +153,7 @@ import Plugin from '~/components/Plugin/Plugin.vue'
       <Plugin
         title="Work"
         icon="i-mdi-book-open-page-variant"
-        description="Créez et gérez des devoirs, cours et examens pour vos étudiants."
+        description="Créez et gérez des devoirs, cours pour vos étudiants."
       />
       <Plugin
         title="Exams"
@@ -161,8 +161,8 @@ import Plugin from '~/components/Plugin/Plugin.vue'
         description="Créez et gérez des examens pour vos étudiants."
       />
       <Plugin
-        title="Reports"
-        icon="i-mdi-file-chart-outline"
+        title="Notes"
+        icon="i-mdi-star-settings-outline"
         description="Générez des bulletins de notes pour vos étudiants."
       />
       <Plugin
