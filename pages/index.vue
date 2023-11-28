@@ -88,7 +88,7 @@
       icon="i-mdi-information"
       title="Introduction"
     >
-      Nous sommes une plateforme cross-plateform facilitant l'accès aux outils éducatifs. Simplifiant la collaboration et les cours en ligne pour écoles et instituts, notre solution promeut l'éducation inclusive, offrant ressources variées et visio-conférences fluides pour un enseignement de qualité.
+      Nous sommes une application cross-plateform facilitant l'accès aux outils éducatifs. Simplifiant la collaboration et les cours en ligne pour écoles et instituts, notre solution promeut l'éducation inclusive, offrant ressources variées et visio-conférences fluides pour un enseignement de qualité.
     </Category>
 
     <Category
@@ -112,10 +112,11 @@
         <small>(Moodle)</small>
       </template>
       <TableItem name="Sécurité" :rows="['yes', 'yes']" description="Gestion des rôles, permissions, et plus." />
-      <TableItem name="Plugins" :rows="['yes', 'yes']" description="Intégration de plugins communautaires." />
+      <TableItem name="Plugins" :rows="['yes', 'yes']" description="Intégration de plugins officiels ou communautaires." />
       <TableItem name="Auto-hébergement" :rows="['yes', 'yes']" description="Hébergez votre application sur votre propre serveur." />
       <TableItem name="Personnalisable" :rows="['yes', 'partial']" description="Personnalisez votre application avec des thèmes, des couleurs, et plus." />
       <TableItem name="Multi-langues" :rows="['yes', 'partial']" description="Traduisez votre application dans plusieurs langues." />
+      <TableItem name="UI friendly" :rows="['yes', 'no']" description="Interface utilisateur moderne et intuitive." />
       <TableItem name="Accessibilité et Inclusivité" :rows="['yes', 'no']" description="Normes ARIA, A11Y." />
       <TableItem name="SDK & Librairie UI intégrés" :rows="['yes', 'no']" description="Bibliothèque UI et SDK pour développer des plugins facilement." />
       <TableItem name="Performances" :rows="['yes', 'no']" description="Application rapide et performante même avec des plugins." />
