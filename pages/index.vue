@@ -3,7 +3,7 @@
 
 <template>
   <Head>
-    <Title> LearnForge &mdash; Une plateforme d'enseignement </Title>
+    <Title> Knowly &mdash; Une plateforme d'enseignement </Title>
   </Head>
   <Header>
     <NavigationItem to="/">
