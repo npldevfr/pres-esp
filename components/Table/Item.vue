@@ -2,7 +2,7 @@
 const props = defineProps<{
   name: string
   description: string
-  rows: ('yes' | 'no' | 'partial')[]
+  rows: ('yes' | 'no' | 'partial' | string)[]
 }>()
 </script>
 
@@ -22,7 +22,10 @@ const props = defineProps<{
       <div class="flex items-center text-2xl justify-center">
         <div v-if="row === 'yes'" class="i-mdi-check text-primary" />
         <div v-else-if="row === 'partial'" class="i-mdi-minus text-yellow-600" />
-        <div v-else class="i-mdi-close text-red-600" />
+        <div v-else-if="row === 'no'" class="i-mdi-close text-red-600" />
+        <div v-else class="text-stone-500 text-xs">
+          {{ row }}
+        </div>
       </div>
     </td>
   </tr>

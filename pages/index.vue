@@ -44,7 +44,7 @@
         d'enseignement
       </h1>
       <p v-motion-fade-visible-once class="w-full text-stone-700 max-w-160">
-        Gérez un campus, école, université, ou autre établissement d'enseignement avec une seule application.
+        Une plateforme d'enseignement pour créer des exercices et examens pour vos étudiants.
       </p>
     </div>
 
@@ -52,18 +52,18 @@
 
     <Cards>
       <CardsCard
-        title="Safety first"
-        description="Sécurisez votre application avec des rôles, des permissions, et plus."
+        title="Sécurité"
+        description="Sécurisez vos exercices et examens avec des outils anti-triche."
         icon="i-mdi-lock"
       />
       <CardsCard
         title="Plugins"
-        description="Intégrez des plugins du marketplace pour inclure visioconférence, édition de documents en temps réel et autres dans votre application."
+        description="Intégrez des plugins du marketplace pour enrichir vos exercices et examens."
         icon="i-mdi-puzzle"
       />
       <CardsCard
         title="Personnalisable"
-        description="Personnalisez votre application avec des thèmes, des couleurs, et plus."
+        description="Personnalisez des templates de cours pour créer des cours uniques."
         icon="i-mdi-palette"
       />
       <CardsCard
@@ -77,9 +77,9 @@
         icon="i-mdi-access-point"
       />
       <CardsCard
-        title="Auto-hébergement"
-        description="Hébergez votre application sur votre propre serveur."
-        icon="i-mdi-server"
+        title="Contenu"
+        description="Accédez à un marketplace de cours et de contenu pour améliorer vos exercices et examens."
+        icon="i-mdi-book"
       />
     </Cards>
   </Container>
@@ -121,58 +121,42 @@
         <div class="i-devicon-moodle text-xl" />
         <small>(Moodle)</small>
       </template>
-      <TableItem name="Sécurité" :rows="['yes', 'yes']" description="Gestion des rôles, permissions, et plus." />
-      <TableItem name="Plugins" :rows="['yes', 'yes']" description="Intégration de plugins officiels ou communautaires." />
-      <TableItem name="Auto-hébergement" :rows="['yes', 'yes']" description="Hébergez votre application sur votre propre serveur." />
+
+      <TableItem name="Sécurité" :rows="['yes', 'yes']" description="Sécurité des examens et cours." />
       <TableItem name="Multi-langues" :rows="['yes', 'yes']" description="Traduisez votre application dans plusieurs langues." />
-      <TableItem name="Accessibilité et Inclusivité" :rows="['yes', 'yes']" description="Normes ARIA, A11Y." />
-      <TableItem name="Personnalisable" :rows="['yes', 'partial']" description="Personnalisez votre application avec des thèmes, des couleurs, et plus." />
-      <TableItem name="UI friendly" :rows="['yes', 'no']" description="Interface utilisateur moderne et intuitive." />
-      <TableItem name="SDK & Librairie UI intégrés" :rows="['yes', 'no']" description="Bibliothèque UI et SDK pour développer des plugins facilement." />
-      <TableItem name="Performances" :rows="['yes', 'no']" description="Application rapide et performante même avec des plugins." />
-      <TableItem name="Creation de plugins simplifiée" :rows="['yes', 'no']" description="Créez des plugins facilement avec notre SDK." />
+      <TableItem name="Plugins" :rows="['yes', 'yes']" description="Intégration de plugins communautaires pour créer de nouvelles façons d'apprendre." />
+      <TableItem name="Accessibilité et Inclusivité" :rows="['yes', 'yes']" description="Rendez votre application accessible et inclusive pour tout le monde." />
+      <TableItem name="Anti-triche" :rows="['yes', 'Seulement en plugin']" description="Sécurisez vos examens avec des outils anti-triche." />
+      <TableItem name="Cours par défaut" :rows="['yes', 'no']" description="Profitez de cours par défaut pour commencer à utiliser l'application sans avoir à créer de cours." />
+      <TableItem name="UI Friendly" :rows="['yes', 'no']" description="Interface utilisateur simple et intuitive." />
+      <TableItem name="Marketplace de cours & contenu" :rows="['yes', 'no']" description="Accédez à un marketplace de cours et de contenu pour enrichir votre application." />
     </Table>
   </Container>
   <Container id="plugins">
     <h2 class="text-4xl font-bold text-center mb-20">
-      Idées Plugins Officiels
+      Idées de Plugins
     </h2>
 
     <PluginList>
       <Plugin
-        title="Visioconférence"
-        icon="i-mdi-video"
-        description="Organisez des visioconférences avec vos étudiants et professeurs."
+        title="Code"
+        description="Intégrez des plugins de code pour créer des exercices de programmation."
+        icon="i-mdi-code-braces"
       />
       <Plugin
-        title="Docs"
-        icon="i-mdi-file-document-edit"
-        description="Éditez des documents en temps réel avec vos étudiants et professeurs."
+        title="Mathématiques"
+        description="Intégrez des plugins de mathématiques pour créer des exercices de mathématiques."
+        icon="i-mdi-calculator"
       />
       <Plugin
-        title="Work"
-        icon="i-mdi-book-open-page-variant"
-        description="Créez et gérez des devoirs, cours pour vos étudiants."
+        title="Quiz"
+        description="Intégrez des plugins de quiz pour créer des exercices de quiz."
+        icon="i-mdi-help-circle"
       />
       <Plugin
-        title="Exams"
-        icon="i-mdi-file-question-outline"
-        description="Créez et gérez des examens pour vos étudiants."
-      />
-      <Plugin
-        title="Notes"
-        icon="i-mdi-star-settings-outline"
-        description="Générez des bulletins de notes pour vos étudiants."
-      />
-      <Plugin
-        title="Calendar"
-        icon="i-mdi-calendar"
-        description="Gérez votre calendrier et vos événements."
-      />
-      <Plugin
-        title="Chat"
-        icon="i-mdi-chat"
-        description="Discutez avec vos étudiants et professeurs."
+        title="Kahoot!"
+        description="Créez des exercices type Kahoot! pour rendre vos cours plus interactifs."
+        icon="i-mdi-gamepad-variant"
       />
     </PluginList>
   </Container>
