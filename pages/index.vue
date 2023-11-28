@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Plugin from '~/components/Plugin/Plugin.vue'
 </script>
 
 <template>
@@ -14,6 +15,9 @@
     </NavigationItem>
     <NavigationItem to="#vs-moodle">
       VS Moodle
+    </NavigationItem>
+    <NavigationItem to="#plugins">
+      Plugins officiels
     </NavigationItem>
     <NavigationItem to="#pbs">
       PBS
@@ -129,6 +133,49 @@
       <TableItem name="Performances" :rows="['yes', 'no']" description="Application rapide et performante même avec des plugins." />
       <TableItem name="Creation de plugins simplifiée" :rows="['yes', 'no']" description="Créez des plugins facilement avec notre SDK." />
     </Table>
+  </Container>
+  <Container id="plugins">
+    <h2 class="text-4xl font-bold text-center mb-20">
+      Idées Plugins Officiels
+    </h2>
+
+    <PluginList>
+      <Plugin
+        title="Visioconférence"
+        icon="i-mdi-video"
+        description="Organisez des visioconférences avec vos étudiants et professeurs."
+      />
+      <Plugin
+        title="Docs"
+        icon="i-mdi-file-document-edit"
+        description="Éditez des documents en temps réel avec vos étudiants et professeurs."
+      />
+      <Plugin
+        title="Work"
+        icon="i-mdi-book-open-page-variant"
+        description="Créez et gérez des devoirs, cours et examens pour vos étudiants."
+      />
+      <Plugin
+        title="Exams"
+        icon="i-mdi-file-question-outline"
+        description="Créez et gérez des examens pour vos étudiants."
+      />
+      <Plugin
+        title="Reports"
+        icon="i-mdi-file-chart-outline"
+        description="Générez des bulletins de notes pour vos étudiants."
+      />
+      <Plugin
+        title="Calendar"
+        icon="i-mdi-calendar"
+        description="Gérez votre calendrier et vos événements."
+      />
+      <Plugin
+        title="Chat"
+        icon="i-mdi-chat"
+        description="Discutez avec vos étudiants et professeurs."
+      />
+    </PluginList>
   </Container>
   <Container id="pbs" class="pb-100">
     <h2 class="text-4xl font-bold text-center mb-20">
