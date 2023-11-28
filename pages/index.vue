@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Plugin from '~/components/Plugin/Plugin.vue'
 </script>
 
 <template>
@@ -125,10 +124,10 @@ import Plugin from '~/components/Plugin/Plugin.vue'
       <TableItem name="Sécurité" :rows="['yes', 'yes']" description="Gestion des rôles, permissions, et plus." />
       <TableItem name="Plugins" :rows="['yes', 'yes']" description="Intégration de plugins officiels ou communautaires." />
       <TableItem name="Auto-hébergement" :rows="['yes', 'yes']" description="Hébergez votre application sur votre propre serveur." />
+      <TableItem name="Multi-langues" :rows="['yes', 'yes']" description="Traduisez votre application dans plusieurs langues." />
+      <TableItem name="Accessibilité et Inclusivité" :rows="['yes', 'yes']" description="Normes ARIA, A11Y." />
       <TableItem name="Personnalisable" :rows="['yes', 'partial']" description="Personnalisez votre application avec des thèmes, des couleurs, et plus." />
-      <TableItem name="Multi-langues" :rows="['yes', 'partial']" description="Traduisez votre application dans plusieurs langues." />
       <TableItem name="UI friendly" :rows="['yes', 'no']" description="Interface utilisateur moderne et intuitive." />
-      <TableItem name="Accessibilité et Inclusivité" :rows="['yes', 'no']" description="Normes ARIA, A11Y." />
       <TableItem name="SDK & Librairie UI intégrés" :rows="['yes', 'no']" description="Bibliothèque UI et SDK pour développer des plugins facilement." />
       <TableItem name="Performances" :rows="['yes', 'no']" description="Application rapide et performante même avec des plugins." />
       <TableItem name="Creation de plugins simplifiée" :rows="['yes', 'no']" description="Créez des plugins facilement avec notre SDK." />
